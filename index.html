@@ -1,85 +1,52 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/zhaozzz-160.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/zhaozzz-160.github.io/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/zhaozzz-160.github.io/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/zhaozzz-160.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/zhaozzz-160.github.io/css/main.css">
 
 
+<link rel="stylesheet" href="/zhaozzz-160.github.io/lib/font-awesome/css/font-awesome.min.css">
 
 
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/zhaozzz-160.github.io/',
+    scheme: 'Muse',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
 
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/zhaozzz.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/zhaozzz.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/zhaozzz.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/zhaozzz.github.io/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/zhaozzz.github.io/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/zhaozzz.github.io/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/zhaozzz.github.io/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Zhaozzz">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Zhaozzz">
@@ -87,39 +54,17 @@
 <meta property="article:author" content="Suzhao">
 <meta name="twitter:card" content="summary">
 
+<link rel="canonical" href="http://yoursite.com/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/zhaozzz.github.io/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
 
   <title>Zhaozzz</title>
   
@@ -129,187 +74,141 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
+</head>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <div class="custom-logo-site-title">
-      <a href="/zhaozzz.github.io/"  class="brand" rel="start">
+    <div>
+      <a href="/zhaozzz-160.github.io/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Zhaozzz</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
         <p class="site-subtitle">PLEASE. A Student </p>
-      
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/zhaozzz.github.io/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
+
+    <a href="/zhaozzz-160.github.io/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/zhaozzz.github.io/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/zhaozzz-160.github.io/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
-  
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <div class="posts-expand">
+        
   
   
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/zhaozzz.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
       <meta itemprop="name" content="Suzhao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/zhaozzz.github.io/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Zhaozzz">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/zhaozzz.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/" itemprop="url">Git学习手记(五):自定义</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/" class="post-title-link" itemprop="url">应用随机过程笔记（三）：Markov链</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
               
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-14T11:42:03+08:00">
-                2020-01-14
-              </time>
-            
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+              <time title="Erstellt: 2020-01-20 20:09:39 / Geändert am: 20:10:25" itemprop="dateCreated datePublished" datetime="2020-01-20T20:09:39+08:00">2020-01-20</time>
+            </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/zhaozzz.github.io/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/zhaozzz-160.github.io/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">数学</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -317,12 +216,211 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p><strong>Markov性</strong></p>
+<p>直观的说，Markov性的意思就是，未来事件的状态至于当前状态有关，与过去状态无关。</p>
+<p>更一般的定义：<br>$$<br>\forall k \geq 1, \forall n_{0} &lt; n_{1} &lt; \ldots &lt; n_{k+1}, \forall i_{0}, i_{1}, \ldots i_{k-1}, i, j<br>$$</p>
+<p>都有</p>
+<p><strong>Markov链的定义</strong></p>
+<p>如果$\left{X_{n}; n=0,1,2, \ldots\right}$是状态离散的随机过程，并且具有Markov性，则称其是Markov链。</p>
+<p><strong>时齐的Markov链</strong></p>
+<p>如果对任何状态i,j，$P\left(X_{n+1}=j | X_{n}=i\right)$不依赖于n，则称其是时齐的Markov链。</p>
+<p>$$<br>p_{i j}:=P\left(X_{n+1}=j | X_{n}=i\right)<br>$$</p>
+<p>成为从i到j的一步转移概率<br><strong>C—K方程</strong></p>
+<p>$$<br>p_{i j}(s, s+u+v)=\sum_{k} p_{i k}(s, s+u) p_{k j}(s+u, s+u+v)<br>$$<br><img src="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png" alt=""><br><strong>状态的分类</strong></p>
+<p>若状态i和状态j可以互相到达，则称i和j是互通的。</p>
+<p>我们把可以互通的状态称为一个类（因为其具有传递性）。</p>
+<p>计算从状态i到其本身的n步转移概率，把大于0的“n”作为一个集合，求其最大公约数，称为状态i的周期，如果最大公约数大于1，则称i是周期的；等于1，则称是非周期的。</p>
+<p>对于状态i和j，记$f_{ij}^{(n)}$从i出发经过n步后首次到达j的概率。令$f_{ij}=\sum_n=1^{\infnity} f_{ij}^{(n)}$，若$f_{jj}=1$，称j为常返状态；$f_{jj}&lt;1$，称为非常返状态。</p>
+<p>再定义<br>$$<br>$\mu_{i}=\sum_{n=1}^{\infty} n f_{ii}^{(n)}$<br>$$<br>表示从i出发，在到达i所需要的平均步数，如果其小于无穷，则称其为正常返状态；等于无穷，则称其为零常返状态。</p>
 
       
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/PyTorch%20Tutorial%20%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
           
-            <h2 id="自定义忽略特殊文件"><a href="#自定义忽略特殊文件" class="headerlink" title="自定义忽略特殊文件"></a>自定义忽略特殊文件</h2><p>在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。</p>
+            <a href="/zhaozzz-160.github.io/2020/01/14/PyTorch%20Tutorial%20%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0/" class="post-title-link" itemprop="url">PyTorch Tutorial 学习手记</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Erstellt: 2020-01-14 20:03:57" itemprop="dateCreated datePublished" datetime="2020-01-14T20:03:57+08:00">2020-01-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-16 10:49:53" itemprop="dateModified" datetime="2020-01-16T10:49:53+08:00">2020-01-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/pytorch/" itemprop="url" rel="index">
+                    <span itemprop="name">pytorch</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Pytorch简介"><a href="#Pytorch简介" class="headerlink" title="Pytorch简介"></a>Pytorch简介</h2><p>包的调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from __future__ import print_function</span><br><span class="line">import torch</span><br></pre></td></tr></table></figure>
+
+<p>创建未初始化的5*3矩阵</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.empty(5, 3)</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+
+<p>随机数填充的矩阵</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.rand(5, 3)</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+
+<p>填充0和dtype长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.zeros(5, 3, dtype&#x3D;torch.long)</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+
+<p>直接指定数据填充</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.tensor([5.5, 3])</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+
+<p>利用已存在的张量创建新的张量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; x.new_ones(5, 3, dtype&#x3D;torch.double)      # new_* methods take in sizes</span><br><span class="line">print(x)</span><br><span class="line"></span><br><span class="line">x &#x3D; torch.randn_like(x, dtype&#x3D;torch.float)    # override dtype!</span><br><span class="line">print(x)                                      # result has the same size</span><br></pre></td></tr></table></figure>
+
+<h3 id="数据操作"><a href="#数据操作" class="headerlink" title="数据操作"></a>数据操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">y &#x3D; torch.rand(5, 3)</span><br><span class="line">print(x + y)</span><br><span class="line"></span><br><span class="line">print(torch.add(x, y))</span><br><span class="line"></span><br><span class="line">result &#x3D; torch.empty(5, 3)</span><br><span class="line">torch.add(x, y, out&#x3D;result)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"># adds x to y</span><br><span class="line">y.add_(x)</span><br><span class="line">print(y)</span><br></pre></td></tr></table></figure>
+
+<p>可以使用类似NumPy的标准索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(x[:, 1])</span><br></pre></td></tr></table></figure>
+
+<p>resize/reshape张量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.randn(4, 4)</span><br><span class="line">y &#x3D; x.view(16)</span><br><span class="line">z &#x3D; x.view(-1, 8)  # the size -1 is inferred from other dimensions</span><br><span class="line">print(x.size(), y.size(), z.size())</span><br></pre></td></tr></table></figure>
+
+<p>使用item方法得到张量中的元素作为python中的数据类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; torch.randn(1)</span><br><span class="line">print(x)</span><br><span class="line">print(x.item())</span><br></pre></td></tr></table></figure>
+
+<p>关于张量的数据操作，参考<a href="https://pytorch.org/docs/stable/torch.html" target="_blank" rel="noopener">https://pytorch.org/docs/stable/torch.html</a></p>
+<h3 id="NumPy桥"><a href="#NumPy桥" class="headerlink" title="NumPy桥"></a>NumPy桥</h3><p>将一个Torch张量转换为NumPy向量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = torch.ones(<span class="number">5</span>)</span><br><span class="line">print(a)</span><br><span class="line">b = a.numpy()</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+
+<p>OK，这个NumPy向量是如何变化的呢？</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a.add_(<span class="number">1</span>)</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+
+<p>np向量的改变如何带来Torch张量的改变</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.ones(<span class="number">5</span>)</span><br><span class="line">b = torch.from_numpy(a)</span><br><span class="line">np.add(a, <span class="number">1</span>, out=a)</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+
+<p>to方法可以将张量移动到任何device上</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># let us run this cell only if CUDA is available</span></span><br><span class="line"><span class="comment"># We will use ``torch.device`` objects to move tensors in and out of GPU</span></span><br><span class="line"><span class="keyword">if</span> torch.cuda.is_available():</span><br><span class="line">    device = torch.device(<span class="string">"cuda"</span>)          <span class="comment"># a CUDA device object</span></span><br><span class="line">    y = torch.ones_like(x, device=device)  <span class="comment"># directly create a tensor on GPU</span></span><br><span class="line">    x = x.to(device)                       <span class="comment"># or just use strings ``.to("cuda")``</span></span><br><span class="line">    z = x + y</span><br><span class="line">    print(z)</span><br><span class="line">    print(z.to(<span class="string">"cpu"</span>, torch.double))       <span class="comment"># ``.to`` can also change dtype together!</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/" class="post-title-link" itemprop="url">Git学习手记(五):自定义</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              <time title="Erstellt: 2020-01-14 11:42:03 / Geändert am: 11:44:49" itemprop="dateCreated datePublished" datetime="2020-01-14T11:42:03+08:00">2020-01-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="自定义忽略特殊文件"><a href="#自定义忽略特殊文件" class="headerlink" title="自定义忽略特殊文件"></a>自定义忽略特殊文件</h2><p>在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。</p>
 <p>GitHub官网上给出了示例<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://github.com/github/gitignore</a></p>
 <p>然后将gitignore文件提交</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .\.gitignore</span><br><span class="line">git commit -m &quot;add .gitignore&quot;</span><br></pre></td></tr></table></figure>
@@ -337,134 +435,73 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.lg &quot;log --color --graph --pretty&#x3D;format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/zhaozzz.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/28/%E4%BD%BF%E7%94%A8PyQt%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
       <meta itemprop="name" content="Suzhao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/zhaozzz.github.io/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Zhaozzz">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/zhaozzz.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" itemprop="url">Git学习手记(四):标签管理</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2019/12/28/%E4%BD%BF%E7%94%A8PyQt%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/" class="post-title-link" itemprop="url">使用PyQt创建一个简单的窗体程序</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-14T11:40:30+08:00">
-                2020-01-14
-              </time>
-            
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+              <time title="Erstellt: 2019-12-28 20:11:24" itemprop="dateCreated datePublished" datetime="2019-12-28T20:11:24+08:00">2019-12-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-20 20:12:48" itemprop="dateModified" datetime="2020-01-20T20:12:48+08:00">2020-01-20</time>
+              </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/zhaozzz.github.io/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/zhaozzz-160.github.io/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -472,12 +509,179 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p><strong>1、    pip安装PyQt5</strong><br>打开命令行，输入指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install PyQt5</span><br></pre></td></tr></table></figure>
+<p>完成后，再输入指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install pyqt5-tools</span><br></pre></td></tr></table></figure>
+<p><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/15ea1bcc780ffc49d0024c3ed1d17b3d.png" alt=""><br>打开PythonIDLE，输入代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import PyQt5</span><br></pre></td></tr></table></figure>
+<p>验证是否安装成功<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/53b54cc3cd666f5c10bf5d52fd3cf741.png" alt=""><br><strong>2、    简单使用</strong><br>输入代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(site.getsitepackage())</span><br></pre></td></tr></table></figure>
+<p>可得到Python包的安装位置<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/51be4d9e2489b88497c5315c59ce7d0b.png" alt=""><br>打开以上路径，并找到pyqt5_tools文件夹，打开designer.exe<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/e77ccbd40d88321845caa8ea00cb7726.png" alt=""><br>绘制一个简单窗体，保存为一个后缀名为.ui的文件<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/7510eb3bb5875eb64eec3d6f33d23835.png" alt=""><br>再Python安装路径中找到Scripts文件夹，利用cmd打开该文件夹，输入以下指令将刚刚保存的.ui文件转换为.py文件<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/5a511d63f1b9d03d1e930cdf8103dbb2.png" alt=""><br>打开，并在代码文件中添加以下语句<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/e7378fcfd2662ca1816023984620630d.png" alt=""><br>保存，用Python打开<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/cdf57e2863011db61ab633ee467b3ad9.png" alt=""></p>
+<p><em>一篇很久以前写的笔记，本来想着能够熟练使用PyQt，然后在今年写一个自己满意的带图形界面的小软件，现在看来没有实现，哈哈</em></p>
 
       
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
           
-            <p>大部分时候，commit id较为复杂，故对于master分支上重要的版本，可以打上标签（tag），便于管理。</p>
+            <a href="/zhaozzz-160.github.io/2019/12/25/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">应用随机过程笔记（二）：泊松过程</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Erstellt: 2019-12-25 20:07:04" itemprop="dateCreated datePublished" datetime="2019-12-25T20:07:04+08:00">2019-12-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-20 20:08:33" itemprop="dateModified" datetime="2020-01-20T20:08:33+08:00">2020-01-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">数学</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="计数过程"><a href="#计数过程" class="headerlink" title="计数过程"></a>计数过程</h2><p>表示截止到时间t已发生的“事件”的总数</p>
+<p><strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/8aaa59e38706006455f426800e14654d.png" alt=""></p>
+<p>计数过程有独立增量、平稳增量（类比前面定义）</p>
+<h2 id="泊松过程"><a href="#泊松过程" class="headerlink" title="泊松过程"></a>泊松过程</h2><p><strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/241ae5e50527fe1c262c95d5887573f9.png" alt=""></p>
+<p><em>称$lambda$为此过程的速率或强度</em></p>
+<p>等价<strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/46aad163fd6ff72ea5aa410d5fc51a73.png" alt=""><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/fa69f6051d99d6e3819dd74dbbd3291b.png" alt=""></p>
+<h2 id="与泊松过程相联系的若干分布"><a href="#与泊松过程相联系的若干分布" class="headerlink" title="与泊松过程相联系的若干分布"></a>与泊松过程相联系的若干分布</h2><p><strong>$X_{n}$序列：来到间隔序列</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/941b790e1a7325c802e4a2d43cf377d9.png" alt=""><br><em>过程无记忆</em></p>
+<p><strong>$S_{n}$序列：第n个时间的等待时间</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/2cc5dac1853b7002d728fd038d83dd34.png" alt=""></p>
+<p><strong>来到时刻的条件分布</strong><br><strong>定理</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/88614bfd11f022667f0be93d94578347.png" alt=""><br>直观的说就是在（0，t）内发生n个时间的条件下，把各事件发生的时刻，看作不排顺序的随机变量，是相互独立的且服从（0，t）上的均匀分布。<br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/99b7df7f7a850a6c91b8e1d41d66bada.png" alt=""><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/ebb3e33e4d12a7e3010124c391c8fcea.png" alt=""></p>
+<h2 id="几种泊松过程的推广"><a href="#几种泊松过程的推广" class="headerlink" title="几种泊松过程的推广"></a>几种泊松过程的推广</h2><h4 id="非齐次泊松过程"><a href="#非齐次泊松过程" class="headerlink" title="非齐次泊松过程"></a>非齐次泊松过程</h4><p><strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/5018a5039d408a5436571c14ebb6f391.png" alt=""><br>也就是说允许，泊松过程的强度是t的函数</p>
+<p>####复合泊松过程<br><strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/160bc3e8dc065768afa23177fa2632af.png" alt=""></p>
+<h4 id="条件泊松过程"><a href="#条件泊松过程" class="headerlink" title="条件泊松过程"></a>条件泊松过程</h4><p><strong>定义</strong><br><img src="https://zhaozzz.xyz/wp-content/uploads/2019/12/516417002da37baa90e6a6ddbc0458d5.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2019/12/25/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">Git学习手记(四):标签管理</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Erstellt: 2019-12-25 11:40:30" itemprop="dateCreated datePublished" datetime="2019-12-25T11:40:30+08:00">2019-12-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-20 20:02:34" itemprop="dateModified" datetime="2020-01-20T20:02:34+08:00">2020-01-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大部分时候，commit id较为复杂，故对于master分支上重要的版本，可以打上标签（tag），便于管理。</p>
 <p>为当前分支下最新的commit打上 v1.0 标签的命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag v1.0</span><br></pre></td></tr></table></figure>
 <p><em>（命令后加commit id即为为指定commit打上标签）</em><br><em>（加上-m参数可以添加标签解释）</em></p>
@@ -498,134 +702,73 @@
 
 <p>删除远程标签（假设已删除本地标签）命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :refs&#x2F;tags&#x2F;v0.9</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/zhaozzz.github.io/2020/01/13/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%B8%89-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/24/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%B8%89-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
       <meta itemprop="name" content="Suzhao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/zhaozzz.github.io/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Zhaozzz">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/zhaozzz.github.io/2020/01/13/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%B8%89-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" itemprop="url">Git学习手记(三):分支管理</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2019/12/24/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%B8%89-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">Git学习手记(三):分支管理</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-13T20:12:37+08:00">
-                2020-01-13
-              </time>
-            
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+              <time title="Erstellt: 2019-12-24 20:12:37" itemprop="dateCreated datePublished" datetime="2019-12-24T20:12:37+08:00">2019-12-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-20 20:02:07" itemprop="dateModified" datetime="2020-01-20T20:02:07+08:00">2020-01-20</time>
+              </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/zhaozzz.github.io/categories/Git/" itemprop="url" rel="index">
+                  <a href="/zhaozzz-160.github.io/categories/Git/" itemprop="url" rel="index">
                     <span itemprop="name">Git</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -633,12 +776,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h1 id="Git学习手记（三）：分支管理"><a href="#Git学习手记（三）：分支管理" class="headerlink" title="Git学习手记（三）：分支管理"></a>Git学习手记（三）：分支管理</h1><p>在Git中使用不同分支进行不同类型的开发是十分必要的。</p>
+          <h1 id="Git学习手记（三）：分支管理"><a href="#Git学习手记（三）：分支管理" class="headerlink" title="Git学习手记（三）：分支管理"></a>Git学习手记（三）：分支管理</h1><p>在Git中使用不同分支进行不同类型的开发是十分必要的。</p>
 <p>默认的一切操作都是在master分支下。</p>
 <p>创建新的分支的命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br></pre></td></tr></table></figure>
@@ -681,112 +819,73 @@
 <p>参考：</p>
 <p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/zhaozzz.github.io/2020/01/13/hello-world/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/23/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E5%AE%9A%E4%B9%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
       <meta itemprop="name" content="Suzhao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/zhaozzz.github.io/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Zhaozzz">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/zhaozzz.github.io/2020/01/13/hello-world/" itemprop="url">Hello World</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/zhaozzz-160.github.io/2019/12/23/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E5%AE%9A%E4%B9%89/" class="post-title-link" itemprop="url">应用随机过程笔记（一）：随机过程的定义</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-13T10:35:10+08:00">
-                2020-01-13
-              </time>
-            
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Erstellt: 2019-12-23 12:16:13" itemprop="dateCreated datePublished" datetime="2019-12-23T12:16:13+08:00">2019-12-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-20 20:01:33" itemprop="dateModified" datetime="2020-01-20T20:01:33+08:00">2020-01-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">数学</span>
+                  </a>
+                </span>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -794,186 +893,160 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <h3 id="随机过程的定义"><a href="#随机过程的定义" class="headerlink" title="随机过程的定义"></a>随机过程的定义</h3><p>一个随机过程，即是一族随机变量，即对于每一个$t \in T$，$X(t)$是一个随机变量。</p>
+<p>T是可数集，则称X是离散时间过程；</p>
+<p>T是连续统，则称X是连续时间过程。</p>
+<p><strong>定义</strong>（随机过程）</p>
+<p>设$$(\Omega, \mathcal{F}, \mathbb{P})$$是概率空间，$ (E, \mathcal{E}) $是可测空间，$T$是指标集，如果对任何$t \in T$，$X_{t}$是$(\Omega,\mathcal{F})$到$(E, \mathcal{E})$上的可测映射，则称$X=\lbrace{X_{t} ; t \in T\rbrace}$是${\Omega,\mathcal{F},\mathbb{P}}$上的以$E$为状态空间的随机过程。</p>
+<p>在连续时间随机过程中，称其有：</p>
+<p>独立增量：若对$t{0}&lt;t_{1}&lt;\dots&lt;t_{n}$，随机变量$X\lbrace(t_{1}\rbrace)-X\lbrace(t_{0}\rbrace), X\lbrace(t_{2}\rbrace)-X\lbrace(t_{1}\rbrace), \cdots, X\lbrace(t_{n}\rbrace)-X\lbrace(t_{n-1}\rbrace)$相互独立。</p>
+<p>平稳增量：$X(t+s)-X(t)$对一切$t$有相同的分布。</p>
+<h3 id="随机过程的有限维分布"><a href="#随机过程的有限维分布" class="headerlink" title="随机过程的有限维分布"></a>随机过程的有限维分布</h3><p>称$F_{t}(x)=P{X(t) \leq x}$，$x \in R$，为${X(t), t \in T}$的一维分布函数。</p>
+<p>称$\lbrace{F_{t}(x), \quad t \in T\rbrace}$为以为分布函数族。</p>
+<p>n维随机变量的分布函数记为<br>$$<br>F_{t_{1}, t_{2}, \dots ,t_{n}}\lbrace(x_{1}, x_{2}, \cdots x_{n}\rbrace)=P\lbrace{X\lbrace(t_{1}\rbrace) \leq x_{1}, X\lbrace(t_{2}\rbrace) \leq x_{2}, \cdots X\lbrace(t_{n}\rbrace) \leq x_{n}\rbrace} \quad<br>x_{i} \in R, i=1,2, \cdots n<br>$$<br>称其为${X(t), t \in T}$的n维分布函数。</p>
+<p>称$\lbrace{F_{t_{1}, t_{2}, \cdots, t_{n}}\lbrace(x_{1}, x_{2}, \cdots x_{n}\rbrace) ; t_{1}, t_{2}, \cdots t_{n} \in T\rbrace}$称为n维分布函数族。</p>
+<p>有限维分布函数族满足：</p>
+<ol>
+<li>横向相容（其意义为t的顺序不影响n维分布函数）</li>
+<li>纵向相容</li>
+</ol>
+<h3 id="均值函数和协方差函数"><a href="#均值函数和协方差函数" class="headerlink" title="均值函数和协方差函数"></a>均值函数和协方差函数</h3><p><em>图片</em></p>
+<p><strong>定义</strong> （二阶矩过程）</p>
+<p>随即过程${X(t), t \in T}$,如果对每一$t \in T$，$E\lbrace[X^{2}(t)\rbrace]$都存在，则称其维二阶矩过程。</p>
+<p>二阶矩过程的均值函数和自相关函数总是存在。</p>
+<h3 id="一些随机过程的分类"><a href="#一些随机过程的分类" class="headerlink" title="一些随机过程的分类"></a>一些随机过程的分类</h3><p><strong>定义</strong></p>
+<p>（正态过程）$\lbrace(X_{t_{1}}, \cdots, X_{t_{n}}\rbrace)$服从正态分布</p>
+<p>（宽平稳过程）X是二阶矩过程，任意t，$\mu_{X}(t)$为常数，$C_{X}(t,s)$只是时间差&amp;s-t&amp;的函数。</p>
+<p>（严平稳过程）满足 （1）所有$X_{t}$同分布；（2）对任何$n&gt;=2$，任何$t_1,\cdots,t_n \in T,\lbrace(X_{t_{1}},\cdots,X_{t_{n}}\rbrace)$的分布只与时间差$t_{2}-t_{1}, \cdots, t_{n}-t_{n-1}$有关，而与时间的起点$t_{1}$无关。</p>
+<p><strong>定义</strong></p>
+<p>（平稳增量过程） $X{t}-X{s}$（增量）的分布仅与时间差有段<br>（独立增量过程）增量相互独立<br>（平稳独立增量过程）既平稳又独立</p>
 
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
-  </section>
+  </div>
 
   
+
 
 
           </div>
           
 
-
-          
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Inhaltsverzeichnis
+        </li>
+        <li class="sidebar-nav-overview">
+          Übersicht
+        </li>
+      </ul>
 
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Suzhao</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Suzhao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/zhaozzz-160.github.io/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">Artikel</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">Kategorien</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">schlagwörter</span>
+      </div>
+  </nav>
+</div>
 
-          <nav class="site-state motion-element">
 
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/zhaozzz.github.io/archives/%20%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
-                
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Suzhao</span>
-
-  
 </div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
   <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
+  <div class="theme-info">Design – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
+  </div>
 
         
 
@@ -983,153 +1056,98 @@
 
 
 
-        
+
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
+  <script src="/zhaozzz-160.github.io/lib/anime.min.js"></script>
+  <script src="/zhaozzz-160.github.io/lib/velocity/velocity.min.js"></script>
+  <script src="/zhaozzz-160.github.io/lib/velocity/velocity.ui.min.js"></script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script src="/zhaozzz-160.github.io/js/utils.js"></script>
+
+<script src="/zhaozzz-160.github.io/js/motion.js"></script>
+
+
+<script src="/zhaozzz-160.github.io/js/schemes/muse.js"></script>
+
+
+<script src="/zhaozzz-160.github.io/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        extensions: ['[mhchem]/mhchem.js'],
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/zhaozzz.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/zhaozzz.github.io/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/zhaozzz.github.io/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/zhaozzz.github.io/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
 
   
 

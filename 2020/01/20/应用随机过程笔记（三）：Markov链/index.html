@@ -46,15 +46,23 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhaozzz">
-<meta property="og:url" content="http://yoursite.com/tags/%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C/index.html">
+  <meta name="description" content="Markov性 直观的说，Markov性的意思就是，未来事件的状态至于当前状态有关，与过去状态无关。 更一般的定义：$$\forall k \geq 1, \forall n_{0} &lt; n_{1} &lt; \ldots &lt; n_{k+1}, \forall i_{0}, i_{1}, \ldots i_{k-1}, i, j$$ 都有 Markov链的定义 如果$\left{X_{">
+<meta property="og:type" content="article">
+<meta property="og:title" content="应用随机过程笔记（三）：Markov链">
+<meta property="og:url" content="http://yoursite.com/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/index.html">
 <meta property="og:site_name" content="Zhaozzz">
+<meta property="og:description" content="Markov性 直观的说，Markov性的意思就是，未来事件的状态至于当前状态有关，与过去状态无关。 更一般的定义：$$\forall k \geq 1, \forall n_{0} &lt; n_{1} &lt; \ldots &lt; n_{k+1}, \forall i_{0}, i_{1}, \ldots i_{k-1}, i, j$$ 都有 Markov链的定义 如果$\left{X_{">
 <meta property="og:locale" content="zh">
+<meta property="og:image" content="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png">
+<meta property="article:published_time" content="2020-01-20T12:09:39.000Z">
+<meta property="article:modified_time" content="2020-01-20T12:10:25.714Z">
 <meta property="article:author" content="Suzhao">
+<meta property="article:tag" content="应用随机过程">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png">
 
-<link rel="canonical" href="http://yoursite.com/tags/%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C/">
+<link rel="canonical" href="http://yoursite.com/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/">
 
 
 <script id="page-configurations">
@@ -62,11 +70,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>Schlagwort: 多人协作 | Zhaozzz</title>
+  <title>应用随机过程笔记（三）：Markov链 | Zhaozzz</title>
   
 
 
@@ -161,93 +169,108 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">多人协作
-          <small>Schlagwort</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          应用随机过程笔记（三）：Markov链
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              <time title="Erstellt: 2020-01-20 20:09:39 / Geändert am: 20:10:25" itemprop="dateCreated datePublished" datetime="2020-01-20T20:09:39+08:00">2020-01-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">数学</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-01-14T11:42:03+08:00"
-              content="2020-01-14">
-          01-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/zhaozzz-160.github.io/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/" itemprop="url">
-            <span itemprop="name">Git学习手记(五):自定义</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-25T11:40:30+08:00"
-              content="2019-12-25">
-          12-25
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/zhaozzz-160.github.io/2019/12/25/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" itemprop="url">
-            <span itemprop="name">Git学习手记(四):标签管理</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-24T20:12:37+08:00"
-              content="2019-12-24">
-          12-24
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/zhaozzz-160.github.io/2019/12/24/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%B8%89-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" itemprop="url">
-            <span itemprop="name">Git学习手记(三):分支管理</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
+        <p><strong>Markov性</strong></p>
+<p>直观的说，Markov性的意思就是，未来事件的状态至于当前状态有关，与过去状态无关。</p>
+<p>更一般的定义：<br>$$<br>\forall k \geq 1, \forall n_{0} &lt; n_{1} &lt; \ldots &lt; n_{k+1}, \forall i_{0}, i_{1}, \ldots i_{k-1}, i, j<br>$$</p>
+<p>都有</p>
+<p><strong>Markov链的定义</strong></p>
+<p>如果$\left{X_{n}; n=0,1,2, \ldots\right}$是状态离散的随机过程，并且具有Markov性，则称其是Markov链。</p>
+<p><strong>时齐的Markov链</strong></p>
+<p>如果对任何状态i,j，$P\left(X_{n+1}=j | X_{n}=i\right)$不依赖于n，则称其是时齐的Markov链。</p>
+<p>$$<br>p_{i j}:=P\left(X_{n+1}=j | X_{n}=i\right)<br>$$</p>
+<p>成为从i到j的一步转移概率<br><strong>C—K方程</strong></p>
+<p>$$<br>p_{i j}(s, s+u+v)=\sum_{k} p_{i k}(s, s+u) p_{k j}(s+u, s+u+v)<br>$$<br><img src="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png" alt=""><br><strong>状态的分类</strong></p>
+<p>若状态i和状态j可以互相到达，则称i和j是互通的。</p>
+<p>我们把可以互通的状态称为一个类（因为其具有传递性）。</p>
+<p>计算从状态i到其本身的n步转移概率，把大于0的“n”作为一个集合，求其最大公约数，称为状态i的周期，如果最大公约数大于1，则称i是周期的；等于1，则称是非周期的。</p>
+<p>对于状态i和j，记$f_{ij}^{(n)}$从i出发经过n步后首次到达j的概率。令$f_{ij}=\sum_n=1^{\infnity} f_{ij}^{(n)}$，若$f_{jj}=1$，称j为常返状态；$f_{jj}&lt;1$，称为非常返状态。</p>
+<p>再定义<br>$$<br>$\mu_{i}=\sum_{n=1}^{\infty} n f_{ii}^{(n)}$<br>$$<br>表示从i出发，在到达i所需要的平均步数，如果其小于无穷，则称其为正常返状态；等于无穷，则称其为零常返状态。</p>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/zhaozzz-160.github.io/tags/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/" rel="tag"># 应用随机过程</a>
+              <a href="/zhaozzz-160.github.io/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/zhaozzz-160.github.io/2020/01/14/PyTorch%20Tutorial%20%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0/" rel="prev" title="PyTorch Tutorial 学习手记">
+      <i class="fa fa-chevron-left"></i> PyTorch Tutorial 学习手记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
