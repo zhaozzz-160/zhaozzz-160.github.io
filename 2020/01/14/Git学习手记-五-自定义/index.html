@@ -46,15 +46,15 @@
   };
 </script>
 
-  <meta name="description" content="自定义忽略特殊文件在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。 GitHub官网上给出了示例https:&#x2F;&#x2F;github.com&#x2F;github&#x2F;gitignore 然后将gitignore文件提交 12git add .\.gitignoregit commit -m &quot;add .">
+  <meta name="description" content="自定义忽略特殊文件在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git学习手记(五):自定义">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E4%BA%94-%E8%87%AA%E5%AE%9A%E4%B9%89/index.html">
 <meta property="og:site_name" content="Zhaozzz">
-<meta property="og:description" content="自定义忽略特殊文件在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。 GitHub官网上给出了示例https:&#x2F;&#x2F;github.com&#x2F;github&#x2F;gitignore 然后将gitignore文件提交 12git add .\.gitignoregit commit -m &quot;add .">
+<meta property="og:description" content="自定义忽略特殊文件在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。">
 <meta property="og:locale" content="zh">
 <meta property="article:published_time" content="2020-01-14T03:42:03.000Z">
-<meta property="article:modified_time" content="2020-01-14T03:44:49.453Z">
+<meta property="article:modified_time" content="2020-01-22T10:30:07.409Z">
 <meta property="article:author" content="Suzhao">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content="多人协作">
@@ -195,10 +195,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Veröffentlicht am</span>
-              
 
-              <time title="Erstellt: 2020-01-14 11:42:03 / Geändert am: 11:44:49" itemprop="dateCreated datePublished" datetime="2020-01-14T11:42:03+08:00">2020-01-14</time>
+              <time title="Erstellt: 2020-01-14 11:42:03" itemprop="dateCreated datePublished" datetime="2020-01-14T11:42:03+08:00">2020-01-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-22 18:30:07" itemprop="dateModified" datetime="2020-01-22T18:30:07+08:00">2020-01-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -223,6 +229,8 @@
 
       
         <h2 id="自定义忽略特殊文件"><a href="#自定义忽略特殊文件" class="headerlink" title="自定义忽略特殊文件"></a>自定义忽略特殊文件</h2><p>在实际使用的过程中，有很多情况是需要git忽略文件夹中的某些文件的，比如编译生成的可执行文件.exe，这是可以编写.gitignore文件以达到此目的。</p>
+<a id="more"></a>
+
 <p>GitHub官网上给出了示例<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://github.com/github/gitignore</a></p>
 <p>然后将gitignore文件提交</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .\.gitignore</span><br><span class="line">git commit -m &quot;add .gitignore&quot;</span><br></pre></td></tr></table></figure>
