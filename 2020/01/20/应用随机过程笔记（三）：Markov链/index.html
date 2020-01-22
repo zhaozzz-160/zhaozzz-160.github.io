@@ -53,14 +53,14 @@
 <meta property="og:site_name" content="Zhaozzz">
 <meta property="og:description" content="Markov性 直观的说，Markov性的意思就是，未来事件的状态至于当前状态有关，与过去状态无关。 更一般的定义：$$\forall k \geq 1, \forall n_{0} &lt; n_{1} &lt; \ldots &lt; n_{k+1}, \forall i_{0}, i_{1}, \ldots i_{k-1}, i, j$$ 都有 Markov链的定义 如果$\left{X_{">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png">
+<meta property="og:image" content="https://github.com/zhaozzz-160/My_Article_Image/blob/master/%E5%BA%9431.png?raw=true">
 <meta property="article:published_time" content="2020-01-20T12:09:39.000Z">
-<meta property="article:modified_time" content="2020-01-20T12:10:25.714Z">
+<meta property="article:modified_time" content="2020-01-22T10:20:39.459Z">
 <meta property="article:author" content="Suzhao">
 <meta property="article:tag" content="应用随机过程">
 <meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png">
+<meta name="twitter:image" content="https://github.com/zhaozzz-160/My_Article_Image/blob/master/%E5%BA%9431.png?raw=true">
 
 <link rel="canonical" href="http://yoursite.com/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/">
 
@@ -196,10 +196,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Veröffentlicht am</span>
-              
 
-              <time title="Erstellt: 2020-01-20 20:09:39 / Geändert am: 20:10:25" itemprop="dateCreated datePublished" datetime="2020-01-20T20:09:39+08:00">2020-01-20</time>
+              <time title="Erstellt: 2020-01-20 20:09:39" itemprop="dateCreated datePublished" datetime="2020-01-20T20:09:39+08:00">2020-01-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-01-22 18:20:39" itemprop="dateModified" datetime="2020-01-22T18:20:39+08:00">2020-01-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -233,7 +239,8 @@
 <p>如果对任何状态i,j，$P\left(X_{n+1}=j | X_{n}=i\right)$不依赖于n，则称其是时齐的Markov链。</p>
 <p>$$<br>p_{i j}:=P\left(X_{n+1}=j | X_{n}=i\right)<br>$$</p>
 <p>成为从i到j的一步转移概率<br><strong>C—K方程</strong></p>
-<p>$$<br>p_{i j}(s, s+u+v)=\sum_{k} p_{i k}(s, s+u) p_{k j}(s+u, s+u+v)<br>$$<br><img src="https://zhaozzz.xyz/wp-content/uploads/2020/01/7bcf806526af0d415cda3a71da649dff.png" alt=""><br><strong>状态的分类</strong></p>
+<p>$$<br>p_{i j}(s, s+u+v)=\sum_{k} p_{i k}(s, s+u) p_{k j}(s+u, s+u+v)<br>$$<br><img src="https://github.com/zhaozzz-160/My_Article_Image/blob/master/%E5%BA%9431.png?raw=true" alt=""></p>
+<p><strong>状态的分类</strong></p>
 <p>若状态i和状态j可以互相到达，则称i和j是互通的。</p>
 <p>我们把可以互通的状态称为一个类（因为其具有传递性）。</p>
 <p>计算从状态i到其本身的n步转移概率，把大于0的“n”作为一个集合，求其最大公约数，称为状态i的周期，如果最大公约数大于1，则称i是周期的；等于1，则称是非周期的。</p>
