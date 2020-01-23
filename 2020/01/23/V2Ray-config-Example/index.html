@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/zhaozzz-160.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/zhaozzz-160.github.io/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/zhaozzz-160.github.io/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/zhaozzz-160.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/zhaozzz-160.github.io/css/main.css">
+
+
+<link rel="stylesheet" href="/zhaozzz-160.github.io/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/zhaozzz-160.github.io/',
+    scheme: 'Muse',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="V2ray是一个代理软件，可以实现代理上网的功能，以下是V2ray配置文件的一些基本例子。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="V2Ray config Example">
+<meta property="og:url" content="http://yoursite.com/2020/01/23/V2Ray-config-Example/index.html">
+<meta property="og:site_name" content="Zhaozzz">
+<meta property="og:description" content="V2ray是一个代理软件，可以实现代理上网的功能，以下是V2ray配置文件的一些基本例子。">
+<meta property="og:locale" content="zh">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/v.png">
+<meta property="article:published_time" content="2020-01-23T09:22:09.000Z">
+<meta property="article:modified_time" content="2020-01-23T09:23:49.416Z">
+<meta property="article:author" content="Suzhao">
+<meta property="article:tag" content="V2ray">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/v.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/01/23/V2Ray-config-Example/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>V2Ray config Example | Zhaozzz</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/zhaozzz-160.github.io/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhaozzz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">PLEASE. A Student </p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/zhaozzz-160.github.io/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/zhaozzz-160.github.io/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/23/V2Ray-config-Example/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zhaozzz-160.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Suzhao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhaozzz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          V2Ray config Example
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              <time title="Erstellt: 2020-01-23 17:22:09 / Geändert am: 17:23:49" itemprop="dateCreated datePublished" datetime="2020-01-23T17:22:09+08:00">2020-01-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/zhaozzz-160.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>V2ray是一个代理软件，可以实现代理上网的功能，以下是V2ray配置文件的一些基本例子。</p>
+<a id="more"></a>
+
+<p>V2Ray客户端和服务端的程序相同，即V2Ray没有客户端和服务端的区别，每一台计算机或vps都可称之为“节点”。但下面仍依习惯称客户端服务端。</p>
+<p>使用V2Ray，其数据包的流向为</p>
+<p><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/v.png" alt=""></p>
+<h3 id="VMess协议"><a href="#VMess协议" class="headerlink" title="VMess协议"></a>VMess协议</h3><p>客户端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">1080</span>, <span class="comment">// 监听端口</span></span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"socks"</span>, <span class="comment">// 入口协议为 SOCKS 5</span></span><br><span class="line">      <span class="attr">"sniffing"</span>: &#123;</span><br><span class="line">        <span class="attr">"enabled"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">"destOverride"</span>: [<span class="string">"http"</span>, <span class="string">"tls"</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"auth"</span>: <span class="string">"noauth"</span>  <span class="comment">//socks的认证设置，noauth 代表不认证，由于 socks 通常在客户端使用，所以这里不认证</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>, <span class="comment">// 出口协议</span></span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"vnext"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"address"</span>: <span class="string">"serveraddr.com"</span>, <span class="comment">// 服务器地址，请修改为你自己的服务器 IP 或域名</span></span><br><span class="line">            <span class="attr">"port"</span>: <span class="number">16823</span>,  <span class="comment">// 服务器端口</span></span><br><span class="line">            <span class="attr">"users"</span>: [</span><br><span class="line">              &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"b831381d-6324-4d53-ad4f-8cda48b30811"</span>,  <span class="comment">// 用户 ID，必须与服务器端配置相同</span></span><br><span class="line">                <span class="attr">"alterId"</span>: <span class="number">64</span> <span class="comment">// 此处的值也应当与服务器相同</span></span><br><span class="line">              &#125;</span><br><span class="line">            ]</span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>服务端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">16823</span>, <span class="comment">// 服务器监听端口</span></span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>,    <span class="comment">// 主传入协议</span></span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"clients"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"id"</span>: <span class="string">"b831381d-6324-4d53-ad4f-8cda48b30811"</span>,  <span class="comment">// 用户 ID，客户端与服务器必须相同</span></span><br><span class="line">            <span class="attr">"alterId"</span>: <span class="number">64</span></span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"freedom"</span>,  <span class="comment">// 主传出协议</span></span><br><span class="line">      <span class="attr">"settings"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Shadowsocks协议"><a href="#Shadowsocks协议" class="headerlink" title="Shadowsocks协议"></a>Shadowsocks协议</h3><p>客户端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">1080</span>, <span class="comment">// 监听端口</span></span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"socks"</span>, <span class="comment">// 入口协议为 SOCKS 5</span></span><br><span class="line">      <span class="attr">"sniffing"</span>: &#123;</span><br><span class="line">        <span class="attr">"enabled"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">"destOverride"</span>: [<span class="string">"http"</span>, <span class="string">"tls"</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"auth"</span>: <span class="string">"noauth"</span>  <span class="comment">// 不认证</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"shadowsocks"</span>,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"servers"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"address"</span>: <span class="string">"serveraddr.com"</span>, <span class="comment">// Shadowsocks 的服务器地址</span></span><br><span class="line">            <span class="attr">"method"</span>: <span class="string">"aes-128-gcm"</span>, <span class="comment">// Shadowsocks 的加密方式</span></span><br><span class="line">            <span class="attr">"ota"</span>: <span class="literal">true</span>, <span class="comment">// 是否开启 OTA，true 为开启</span></span><br><span class="line">            <span class="attr">"password"</span>: <span class="string">"sspasswd"</span>, <span class="comment">// Shadowsocks 的密码</span></span><br><span class="line">            <span class="attr">"port"</span>: <span class="number">1024</span>  </span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>服务端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">1024</span>, <span class="comment">// 监听端口</span></span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"shadowsocks"</span>,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"method"</span>: <span class="string">"aes-128-gcm"</span>,</span><br><span class="line">        <span class="attr">"ota"</span>: <span class="literal">true</span>, <span class="comment">// 是否开启 OTA</span></span><br><span class="line">        <span class="attr">"password"</span>: <span class="string">"sspasswd"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"freedom"</span>,  </span><br><span class="line">      <span class="attr">"settings"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="日志文件输出的配置"><a href="#日志文件输出的配置" class="headerlink" title="日志文件输出的配置"></a>日志文件输出的配置</h3><p>客户端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"log"</span>: &#123;</span><br><span class="line">    <span class="attr">"loglevel"</span>: <span class="string">"warning"</span>, <span class="comment">// 日志级别</span></span><br><span class="line">    <span class="attr">"access"</span>: <span class="string">"D:\\v2ray\\access.log"</span>,  <span class="comment">// 这是 Windows 系统的路径</span></span><br><span class="line">    <span class="attr">"error"</span>: <span class="string">"D:\\v2ray\\error.log"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">1080</span>,</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"socks"</span>,</span><br><span class="line">      <span class="attr">"sniffing"</span>: &#123;</span><br><span class="line">        <span class="attr">"enabled"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">"destOverride"</span>: [<span class="string">"http"</span>, <span class="string">"tls"</span>]</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"auth"</span>: <span class="string">"noauth"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"vnext"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"address"</span>: <span class="string">"serveraddr.com"</span>,</span><br><span class="line">            <span class="attr">"port"</span>: <span class="number">16823</span>,  </span><br><span class="line">            <span class="attr">"users"</span>: [</span><br><span class="line">              &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"b831381d-6324-4d53-ad4f-8cda48b30811"</span>,  </span><br><span class="line">                <span class="attr">"alterId"</span>: <span class="number">64</span></span><br><span class="line">              &#125;</span><br><span class="line">            ]</span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>服务端</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"log"</span>: &#123;</span><br><span class="line">    <span class="attr">"loglevel"</span>: <span class="string">"warning"</span>,</span><br><span class="line">    <span class="attr">"access"</span>: <span class="string">"/var/log/v2ray/access.log"</span>, <span class="comment">// 这是 Linux 的路径</span></span><br><span class="line">    <span class="attr">"error"</span>: <span class="string">"/var/log/v2ray/error.log"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"inbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"port"</span>: <span class="number">16823</span>,</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>,   </span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"clients"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"id"</span>: <span class="string">"b831381d-6324-4d53-ad4f-8cda48b30811"</span>,  </span><br><span class="line">            <span class="attr">"alterId"</span>: <span class="number">64</span></span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"outbounds"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"freedom"</span>,  </span><br><span class="line">      <span class="attr">"settings"</span>: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="路由功能"><a href="#路由功能" class="headerlink" title="路由功能"></a>路由功能</h3><p>将客户端配置文件中的输出改为</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">"outbounds": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"protocol"</span>: <span class="string">"freedom"</span>, <span class="comment">//原来是 VMess，现在改成 freedom</span></span><br><span class="line">    <span class="attr">"settings"</span>: &#123;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">"outbounds": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"protocol"</span>: <span class="string">"blackhole"</span>, <span class="comment">//原来是 VMess，现在改成 freedom</span></span><br><span class="line">    <span class="attr">"settings"</span>: &#123;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>第一个协议freedom相当于直连，因为不通过vps，第二个流量都进了“黑洞”，所以不能上网。</p>
+<p>在一个配置文件中可以添加多种协议，如</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">  "outbounds": [ </span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>, <span class="comment">// 出口协议</span></span><br><span class="line">      <span class="attr">"settings"</span>: &#123;</span><br><span class="line">        <span class="attr">"vnext"</span>: [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">"address"</span>: <span class="string">"serveraddr.com"</span>, <span class="comment">// 服务器 IP 地址</span></span><br><span class="line">            <span class="attr">"port"</span>: <span class="number">16823</span>,  <span class="comment">// 服务器端口</span></span><br><span class="line">            <span class="attr">"users"</span>: [</span><br><span class="line">              &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"b831381d-6324-4d53-ad4f-8cda48b30811"</span>,  <span class="comment">// 用户 ID，须与服务器端配置相同</span></span><br><span class="line">                <span class="attr">"alterId"</span>: <span class="number">64</span></span><br><span class="line">              &#125;</span><br><span class="line">            ]</span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"freedom"</span>,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;&#125;,</span><br><span class="line">      <span class="attr">"tag"</span>: <span class="string">"direct"</span><span class="comment">//这里相当于为此处协议打上标签，方便规则的设定</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"protocol"</span>: <span class="string">"blackhole"</span>,</span><br><span class="line">      <span class="attr">"settings"</span>: &#123;&#125;,</span><br><span class="line">      <span class="attr">"tag"</span>: <span class="string">"adblock"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面配置文件的所添加的规则为，特定网站(大陆主流网站域名及IP)和ip走freedom协议，其他走VMess协议</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">"routing": &#123;</span><br><span class="line">  "domainStrategy": "IPOnDemand",</span><br><span class="line">  "rules": [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"type"</span>: <span class="string">"field"</span>,</span><br><span class="line">      <span class="attr">"outboundTag"</span>: <span class="string">"direct"</span>,</span><br><span class="line">      <span class="attr">"domain"</span>: [<span class="string">"geosite:cn"</span>] <span class="comment">// 中国大陆主流网站的域名</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"type"</span>: <span class="string">"field"</span>,</span><br><span class="line">      <span class="attr">"outboundTag"</span>: <span class="string">"direct"</span>,</span><br><span class="line">      <span class="attr">"ip"</span>: [</span><br><span class="line">        <span class="string">"geoip:cn"</span>, <span class="comment">// 中国大陆的 IP</span></span><br><span class="line">        <span class="string">"geoip:private"</span> <span class="comment">// 私有地址 IP，如路由器等</span></span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果想特定网站直连以及屏蔽特定网站，则添加以下规则</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"domain"</span>: [</span><br><span class="line">    <span class="string">"tanx.com"</span>,</span><br><span class="line">    <span class="string">"googeadsserving.cn"</span>,</span><br><span class="line">    <span class="string">"baidu.com"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"type"</span>: <span class="string">"field"</span>,</span><br><span class="line">  <span class="attr">"outboundTag"</span>: <span class="string">"adblock"</span>       </span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">"domain"</span>: [</span><br><span class="line">    <span class="string">"amazon.com"</span>,</span><br><span class="line">    <span class="string">"microsoft.com"</span>,</span><br><span class="line">    <span class="string">"jd.com"</span>,</span><br><span class="line">    <span class="string">"youku.com"</span>,</span><br><span class="line">    <span class="string">"baidu.com"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"type"</span>: <span class="string">"field"</span>,</span><br><span class="line">  <span class="attr">"outboundTag"</span>: <span class="string">"direct"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/zhaozzz-160.github.io/tags/V2ray/" rel="tag"># V2ray</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/zhaozzz-160.github.io/2020/01/20/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9AMarkov%E9%93%BE/" rel="prev" title="应用随机过程笔记（三）：Markov链">
+      <i class="fa fa-chevron-left"></i> 应用随机过程笔记（三）：Markov链
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Inhaltsverzeichnis
+        </li>
+        <li class="sidebar-nav-overview">
+          Übersicht
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#VMess协议"><span class="nav-number">1.</span> <span class="nav-text">VMess协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shadowsocks协议"><span class="nav-number">2.</span> <span class="nav-text">Shadowsocks协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志文件输出的配置"><span class="nav-number">3.</span> <span class="nav-text">日志文件输出的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由功能"><span class="nav-number">4.</span> <span class="nav-text">路由功能</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Suzhao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/zhaozzz-160.github.io/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">Artikel</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">Kategorien</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">schlagwörter</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Suzhao</span>
+</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Design – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/zhaozzz-160.github.io/lib/anime.min.js"></script>
+  <script src="/zhaozzz-160.github.io/lib/velocity/velocity.min.js"></script>
+  <script src="/zhaozzz-160.github.io/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/zhaozzz-160.github.io/js/utils.js"></script>
+
+<script src="/zhaozzz-160.github.io/js/motion.js"></script>
+
+
+<script src="/zhaozzz-160.github.io/js/schemes/muse.js"></script>
+
+
+<script src="/zhaozzz-160.github.io/js/next-boot.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
