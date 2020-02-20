@@ -46,33 +46,21 @@
   };
 </script>
 
-  <meta name="description" content="计数过程表示截止到时间t已发生的“事件”的总数">
+  <meta name="description" content="对于缺失值的处理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="应用随机过程笔记（二）：泊松过程">
-<meta property="og:url" content="http://yoursite.com/2019/12/25/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B/index.html">
+<meta property="og:title" content="Kaggle_Micro-Course_Notes_Missing-Values">
+<meta property="og:url" content="http://yoursite.com/2020/02/20/Kaggle-Micro-Course-Notes-Missing-Values/index.html">
 <meta property="og:site_name" content="Zhaozzz">
-<meta property="og:description" content="计数过程表示截止到时间t已发生的“事件”的总数">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/4.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/6.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/7.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/7.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/8.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/9.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/0.png">
-<meta property="article:published_time" content="2019-12-25T12:07:04.000Z">
-<meta property="article:modified_time" content="2020-01-22T10:36:25.933Z">
+<meta property="og:description" content="对于缺失值的处理">
+<meta property="article:published_time" content="2020-02-20T08:00:23.000Z">
+<meta property="article:modified_time" content="2020-02-20T08:20:50.379Z">
 <meta property="article:author" content="Suzhao">
-<meta property="article:tag" content="应用随机过程">
-<meta property="article:tag" content="数学">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Machine Learning">
+<meta property="article:tag" content="Kaggle">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/1.png">
 
-<link rel="canonical" href="http://yoursite.com/2019/12/25/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B/">
+<link rel="canonical" href="http://yoursite.com/2020/02/20/Kaggle-Micro-Course-Notes-Missing-Values/">
 
 
 <script id="page-configurations">
@@ -84,7 +72,7 @@
   };
 </script>
 
-  <title>应用随机过程笔记（二）：泊松过程 | Zhaozzz</title>
+  <title>Kaggle_Micro-Course_Notes_Missing-Values | Zhaozzz</title>
   
 
 
@@ -189,7 +177,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%B3%8A%E6%9D%BE%E8%BF%87%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/20/Kaggle-Micro-Course-Notes-Missing-Values/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/%E5%A4%B4%E5%83%8F1.png">
@@ -202,7 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          应用随机过程笔记（二）：泊松过程
+          Kaggle_Micro-Course_Notes_Missing-Values
         </h1>
 
         <div class="post-meta">
@@ -211,24 +199,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-12-25 20:07:04" itemprop="dateCreated datePublished" datetime="2019-12-25T20:07:04+08:00">2019-12-25</time>
+              <time title="创建时间：2020-02-20 16:00:23 / 修改时间：16:20:50" itemprop="dateCreated datePublished" datetime="2020-02-20T16:00:23+08:00">2020-02-20</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 18:36:25" itemprop="dateModified" datetime="2020-01-22T18:36:25+08:00">2020-01-22</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">数学</span>
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
                   </a>
                 </span>
             </span>
@@ -244,20 +226,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="计数过程"><a href="#计数过程" class="headerlink" title="计数过程"></a>计数过程</h2><p>表示截止到时间t已发生的“事件”的总数</p>
+        <p>对于缺失值的处理</p>
 <a id="more"></a>
 
-<p><strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/1.png" alt=""></p>
-<p>计数过程有独立增量、平稳增量（类比前面定义）</p>
-<h2 id="泊松过程"><a href="#泊松过程" class="headerlink" title="泊松过程"></a>泊松过程</h2><p><strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/2.png" alt=""></p>
-<p><em>称$lambda$为此过程的速率或强度</em></p>
-<p>等价<strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/3.png" alt=""><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/3.png" alt=""></p>
-<h2 id="与泊松过程相联系的若干分布"><a href="#与泊松过程相联系的若干分布" class="headerlink" title="与泊松过程相联系的若干分布"></a>与泊松过程相联系的若干分布</h2><p><strong>$X_{n}$序列：来到间隔序列</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/4.png" alt=""><br><em>过程无记忆</em></p>
-<p><strong>$S_{n}$序列：第n个时间的等待时间</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/5.png" alt=""></p>
-<p><strong>来到时刻的条件分布</strong><br><strong>定理</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/6.png" alt=""><br>直观的说就是在（0，t）内发生n个时间的条件下，把各事件发生的时刻，看作不排顺序的随机变量，是相互独立的且服从（0，t）上的均匀分布。<br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/7.png" alt=""><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/7.png" alt=""></p>
-<h2 id="几种泊松过程的推广"><a href="#几种泊松过程的推广" class="headerlink" title="几种泊松过程的推广"></a>几种泊松过程的推广</h2><h4 id="非齐次泊松过程"><a href="#非齐次泊松过程" class="headerlink" title="非齐次泊松过程"></a>非齐次泊松过程</h4><p><strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/8.png" alt=""><br>也就是说允许，泊松过程的强度是t的函数</p>
-<p>####复合泊松过程<br><strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/9.png" alt=""></p>
-<h4 id="条件泊松过程"><a href="#条件泊松过程" class="headerlink" title="条件泊松过程"></a>条件泊松过程</h4><p><strong>定义</strong><br><img src="https://raw.githubusercontent.com/zhaozzz-160/My_Article_Image/master/0.png" alt=""></p>
+<p>一般来说对于数据中的缺失值，有三种处理方法</p>
+<ol>
+<li>去掉含有缺失值的参数列</li>
+<li>对缺失值进行估算</li>
+<li>对缺失值进行估算，同时添加一列说明其是否为缺失值的参数</li>
+</ol>
+<h1 id="Drop-Columns-with-Missing-Values"><a href="#Drop-Columns-with-Missing-Values" class="headerlink" title="Drop Columns with Missing Values"></a>Drop Columns with Missing Values</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get names of columns with missing values</span></span><br><span class="line">cols_with_missing = [col <span class="keyword">for</span> col <span class="keyword">in</span> X_train.columns</span><br><span class="line">                     <span class="keyword">if</span> X_train[col].isnull().any()]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Drop columns in training and validation data</span></span><br><span class="line">reduced_X_train = X_train.drop(cols_with_missing, axis=<span class="number">1</span>)</span><br><span class="line">reduced_X_valid = X_valid.drop(cols_with_missing, axis=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<p>在上述代码中， <code>isnull()</code>显然是用来判断值是否缺失的，搭配<code>any()</code>，<code>isnull().any()</code>可以判断哪些“列”存在缺失值。</p>
+<h1 id="Imputation"><a href="#Imputation" class="headerlink" title="Imputation"></a>Imputation</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.impute <span class="keyword">import</span> SimpleImputer</span><br><span class="line"></span><br><span class="line"><span class="comment"># Imputation</span></span><br><span class="line">my_imputer = SimpleImputer()</span><br><span class="line">imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))</span><br><span class="line">imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Imputation removed column names; put them back</span></span><br><span class="line">imputed_X_train.columns = X_train.columns</span><br><span class="line">imputed_X_valid.columns = X_valid.columns</span><br></pre></td></tr></table></figure>
+
+<p><code>transform()</code>函数的作用是通过找中心和缩放实现标准化，而<code>fit_transform()</code>则是先拟合数据，在实现标准化。</p>
+<p>还需注意的是imputation的过程会一处参数名这一行数据。</p>
+<h1 id="An-Extension-to-Imputation"><a href="#An-Extension-to-Imputation" class="headerlink" title="An Extension to Imputation"></a>An Extension to Imputation</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Make copy to avoid changing original data (when imputing)</span></span><br><span class="line">X_train_plus = X_train.copy()</span><br><span class="line">X_valid_plus = X_valid.copy()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make new columns indicating what will be imputed</span></span><br><span class="line"><span class="keyword">for</span> col <span class="keyword">in</span> cols_with_missing:</span><br><span class="line">    X_train_plus[col + <span class="string">'_was_missing'</span>] = X_train_plus[col].isnull()</span><br><span class="line">    X_valid_plus[col + <span class="string">'_was_missing'</span>] = X_valid_plus[col].isnull()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Imputation</span></span><br><span class="line">my_imputer = SimpleImputer()</span><br><span class="line">imputed_X_train_plus = pd.DataFrame(my_imputer.fit_transform(X_train_plus))</span><br><span class="line">imputed_X_valid_plus = pd.DataFrame(my_imputer.transform(X_valid_plus))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Imputation removed column names; put them back</span></span><br><span class="line">imputed_X_train_plus.columns = X_train_plus.columns</span><br><span class="line">imputed_X_valid_plus.columns = X_valid_plus.columns</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -267,8 +252,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/" rel="tag"># 应用随机过程</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+              <a href="/tags/Kaggle/" rel="tag"># Kaggle</a>
           </div>
 
         
@@ -277,13 +263,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/25/Git%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0-%E5%9B%9B-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" rel="prev" title="Git学习手记(四):标签管理">
-      <i class="fa fa-chevron-left"></i> Git学习手记(四):标签管理
+    <a href="/2020/02/15/%E5%88%A9%E7%94%A8selenium%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E7%BD%91%E7%BB%9C%E8%A1%A8%E6%A0%BC/" rel="prev" title="利用selenium自动填写网络表格">
+      <i class="fa fa-chevron-left"></i> 利用selenium自动填写网络表格
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/28/%E4%BD%BF%E7%94%A8PyQt%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/" rel="next" title="使用PyQt创建一个简单的窗体程序">
-      使用PyQt创建一个简单的窗体程序 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -343,7 +326,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#计数过程"><span class="nav-number">1.</span> <span class="nav-text">计数过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泊松过程"><span class="nav-number">2.</span> <span class="nav-text">泊松过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与泊松过程相联系的若干分布"><span class="nav-number">3.</span> <span class="nav-text">与泊松过程相联系的若干分布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几种泊松过程的推广"><span class="nav-number">4.</span> <span class="nav-text">几种泊松过程的推广</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#非齐次泊松过程"><span class="nav-number">4.0.1.</span> <span class="nav-text">非齐次泊松过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件泊松过程"><span class="nav-number">4.0.2.</span> <span class="nav-text">条件泊松过程</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Drop-Columns-with-Missing-Values"><span class="nav-number">1.</span> <span class="nav-text">Drop Columns with Missing Values</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Imputation"><span class="nav-number">2.</span> <span class="nav-text">Imputation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#An-Extension-to-Imputation"><span class="nav-number">3.</span> <span class="nav-text">An Extension to Imputation</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -439,7 +422,7 @@
 <script src="/js/schemes/muse.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="/js/next-boot.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -463,56 +446,6 @@
   
 
   
-      
-<script type="text/x-mathjax-config">
-    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-        extensions: ['[mhchem]/mhchem.js'],
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') {
-          next = next.nextSibling;
-        }
-        if (next && next.nodeName.toLowerCase() === 'br') {
-          next.parentNode.removeChild(next);
-        }
-      }
-    });
-  });
-
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for (i = 0; i < all.length; i += 1) {
-      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
-      if (element.nodeName.toLowerCase() == 'li') {
-        element = element.parentNode;
-      }
-      element.classList.add('has-jax');
-    }
-  });
-</script>
-<script>
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
-    MathJax.Hub.Typeset();
-  }, window.MathJax);
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
-    
 
   
 
