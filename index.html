@@ -195,10 +195,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-14 18:07:33 / 修改时间：18:46:17" itemprop="dateCreated datePublished" datetime="2020-03-14T18:07:33+08:00">2020-03-14</time>
+              <time title="创建时间：2020-03-14 18:07:33" itemprop="dateCreated datePublished" datetime="2020-03-14T18:07:33+08:00">2020-03-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-15 11:52:44" itemprop="dateModified" datetime="2020-04-15T11:52:44+08:00">2020-04-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -222,21 +228,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="CT基本原理"><a href="#CT基本原理" class="headerlink" title="CT基本原理"></a>CT基本原理</h1><p>X射线在穿过不同的物质时，会有不同的衰减速率。假设某种物质的X射线衰减因子是μ，那么X射线的强度在穿过该物质的前后关系为：<br>$$<br>I=I_{0} e^{-\mu L}<br>$$<br>其中，$I_0$为入射的$X$射线的强度，$I$为出射的$X$射线强度，$L$为$X$射线穿过该物质的长度。</p>
-<p>X射线可以得到物体的二维平面信息，CT的成像原理是，在得到多个角度的二维图像信息后，通过合适的算法即可得到物体的三维信息。</p>
-<p>将物体抽象为一个2*2的矩阵，从各个角度对其投影</p>
-<p>！图</p>
-<p>上图可以清晰简单的看到得到的投影结果。对其作逆投影，即将得到的投影信息在对应方向上相加</p>
-<p>！图</p>
-<p>然后，可以通过以下的计算得到矩阵的内部信息<br>$$<br>\left(<br>\left(<br>\begin{array}{cc}<br>32 &amp; 23 \<br>26 &amp; 38 \<br>\end{array}<br>\right)<br>-(10+7)<br>\right)<br>/<br>\left(4-1\right)<br>=\left(<br>\begin{array}{cc}<br>5 &amp; 2 \<br>3 &amp; 7 \<br>\end{array}<br>\right)<br>$$</p>
-<h1 id="Radon变换"><a href="#Radon变换" class="headerlink" title="Radon变换"></a>Radon变换</h1><p><img src="%5Cimages%5CCT_3.png" alt=""></p>
-<p>如图所示，假设物体上每一点对射线的衰减程度为函数$f(x,y)$，相当于在每一个方向上，都可以得到物体在此方向上的“厚度”。根据所得到的数据，即可求出物体在每一点上的衰减程度。</p>
-<p>求“厚度”可以在数学上表述为一种线积分，当直线$L$穿过$f(x,y)$，在连续状态下，所对应的强度就是函数$f(x,y)$在直线L上的线积分：<br>$$<br>g_{L}=\int_{L} f(x, y) \mathrm{d} s<br>$$<br>线L的方程为<br>$$<br>y=kx+b<br>$$<br>假设线L与y轴的夹角为theta，直线L也可以表示为<br>$$<br>xcos{\theta}+ysin{\theta}=\rho,  \quad  \quad \rho=bsin{\theta}<br>$$<br>于是：<br>$$<br>g(\rho, \theta)=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x, y) \delta(x \cos \theta+y \sin \theta-\rho) d x d y<br>$$<br>其中$\delta$是冲激函数。除非$\delta$的参量为0，否则上式的右边为零，它指出积分只沿着$xcos{\theta}+ysin{\theta}=\rho$计算。</p>
-<p>在离散状态下，上式变为<br>$$<br>g(\rho, \theta)=\sum_{x=0}^{M-1} \sum_{y=0}^{N-1} f(x, y) \delta(x \cos \theta+y \sin \theta-\rho)<br>$$</p>
-<p>沿xy平面任意一条直线的线积分的公式，称之为Radon变换。Radon变换$g(\rho,\theta)$以$\rho,\theta$作为直线坐标显示为一幅图像时，结果称之为正弦图。下图为一个矩形的正弦图</p>
-<h1 id="从投影得到三维信息"><a href="#从投影得到三维信息" class="headerlink" title="从投影得到三维信息"></a>从投影得到三维信息</h1><p>从投影中得到三维信息，其过程是反投影每一个投影，然后对反投影求和产生一幅图像。堆积所有的结果图像得到物体的三维信息。</p>
-<p>对于一个固定旋转值\theta <em>{k}的投影，可以得到如下表达式：<br>$$<br>f</em>{\theta_{k}}(x, y)=g\left(\rho, \theta_{k}\right)=g\left(x \cos \theta_{k}+y \sin \theta_{k}, \theta_{k}\right)<br>$$<br>显然，这一公式对于任意\theta <em>{k}值均成立，更一般地，<br>$$<br>f</em>{\theta}(x, y)=g(x \cos \theta+y \sin \theta, \theta)<br>$$<br>通过对所有反投影得到的图像积分，得到最终结果：<br>$$<br>f(x, y)=\int_{0}^{\pi} f_{\theta}(x, y) \mathrm{d} \theta<br>$$<br>离散状态下，上式为：<br>$$<br>f(x, y)=\sum_{\theta=0}^{\pi} f_{\theta}(x, y)<br>$$<br>!图</p>
-
+          <h1 id="CT基本原理"><a href="#CT基本原理" class="headerlink" title="CT基本原理"></a>CT基本原理</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/14/CT%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
